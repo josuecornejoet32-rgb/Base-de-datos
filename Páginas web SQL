@@ -1,0 +1,1049 @@
+CSS:
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #e5e8ef;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #172033;
+}
+
+.logo span {
+    color: #2864d7;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #596579;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2864d7;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(135deg, #f7faff, #eef4ff);
+}
+
+.hero-text {
+    max-width: 570px;
+}
+
+.etiqueta {
+    color: #2864d7;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text p:not(.etiqueta) {
+    color: #657084;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+
+    background-color: #2864d7;
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background-color: #174da9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BLOQUE DE CÓDIGO
+========================= */
+
+.codigo-principal {
+    width: 470px;
+
+    background-color: #101827;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(21, 42, 80, 0.18);
+}
+
+.barra {
+    height: 40px;
+    background-color: #192235;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+
+    gap: 7px;
+}
+
+.barra span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #7c879b;
+}
+
+.codigo-principal pre {
+    padding: 35px;
+
+    color: #a9d5ff;
+
+    font-size: 16px;
+
+    overflow-x: auto;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+main {
+    width: 100%;
+}
+
+.seccion {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+}
+
+.numero {
+    color: #2864d7;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.texto {
+    max-width: 750px;
+
+    color: #657084;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 45px;
+}
+
+.tarjeta {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e7eaf0;
+
+    transition: 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(30, 50, 90, 0.08);
+}
+
+.icono {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #6c7789;
+}
+
+
+/* =========================
+   FUNCIONAMIENTO
+========================= */
+
+.funcionamiento {
+    max-width: 100%;
+
+    background-color: white;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.pasos {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+.paso {
+    width: 230px;
+
+    padding: 25px;
+
+    background-color: #f6f8fc;
+
+    border-radius: 10px;
+}
+
+.paso strong {
+    color: #2864d7;
+
+    font-size: 25px;
+}
+
+.paso h3 {
+    margin: 8px 0;
+}
+
+.paso p {
+    color: #687386;
+}
+
+.flecha {
+    font-size: 30px;
+
+    color: #2864d7;
+}
+
+
+/* =========================
+   COMANDOS
+========================= */
+
+.comandos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 40px;
+}
+
+.comando {
+    background-color: white;
+
+    border: 1px solid #e4e8ef;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+.comando span {
+    display: inline-block;
+
+    background-color: #eaf1ff;
+
+    color: #2864d7;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-family: monospace;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.comando p {
+    color: #697487;
+}
+
+
+/* =========================
+   EJEMPLOS
+========================= */
+
+.ejemplos {
+    background-color: #f5f7fb;
+}
+
+.ejemplo {
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    margin-top: 35px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #e4e8ef;
+}
+
+.descripcion {
+    padding: 35px;
+}
+
+.descripcion h3 {
+    font-size: 24px;
+
+    margin: 15px 0 10px;
+}
+
+.descripcion p {
+    color: #687386;
+}
+
+.tag {
+    color: #2864d7;
+
+    background-color: #eaf1ff;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.codigo {
+    background-color: #101827;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+.codigo pre {
+    color: #a9d5ff;
+
+    font-size: 15px;
+
+    overflow-x: auto;
+}
+
+
+/* =========================
+   CAPTURA
+========================= */
+
+.captura {
+    text-align: center;
+}
+
+.captura .texto {
+    margin: auto;
+}
+
+.imagen-sql {
+    max-width: 850px;
+
+    margin: 45px auto 0;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(20, 35, 70, 0.15);
+}
+
+.barra-editor {
+    background-color: #1c273a;
+
+    color: #b8c2d4;
+
+    text-align: left;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+}
+
+.editor {
+    min-height: 260px;
+
+    background-color: #101827;
+
+    color: #718097;
+
+    text-align: left;
+
+    padding: 30px;
+
+    font-family: monospace;
+
+    line-height: 1.8;
+}
+
+.editor code {
+    color: #a9d5ff;
+
+    margin-left: 25px;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: #172033;
+
+    color: white;
+}
+
+.final h2 {
+    font-size: 40px;
+}
+
+.final p {
+    color: #b7c0d0;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #101827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+footer p {
+    color: #8d98ab;
+
+    margin-top: 10px;
+}
+
+footer .copyright {
+    font-size: 13px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .codigo-principal {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .comandos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ejemplo {
+        grid-template-columns: 1fr;
+    }
+
+    .pasos {
+        flex-direction: column;
+    }
+
+    .flecha {
+        transform: rotate(90deg);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .comandos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion {
+        padding: 70px 20px;
+    }
+}
+
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aprende SQL</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+        <div class="logo">SQL<span>Academy</span></div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#que-es">¿Qué es SQL?</a>
+            <a href="#comandos">Comandos</a>
+            <a href="#ejemplos">Ejemplos</a>
+        </nav>
+    </header>
+
+
+    <!-- INICIO -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+
+            <p class="etiqueta">APRENDE DESDE CERO</p>
+
+            <h1>Aprende SQL de forma<br>simple y práctica</h1>
+
+            <p>
+                Descubre qué es SQL, cómo funciona y cómo utilizar
+                sus principales comandos para trabajar con bases de datos.
+            </p>
+
+            <a href="#que-es" class="boton">Comenzar</a>
+
+        </div>
+
+        <div class="codigo-principal">
+
+            <div class="barra">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+<pre><code>SELECT nombre, edad
+FROM usuarios
+WHERE edad > 18;</code></pre>
+
+        </div>
+
+    </section>
+
+
+    <!-- ¿QUÉ ES SQL? -->
+
+    <main>
+
+        <section id="que-es" class="seccion">
+
+            <p class="numero">01 — CONCEPTOS</p>
+
+            <h2>¿Qué es SQL?</h2>
+
+            <p class="texto">
+                SQL significa <strong>Structured Query Language</strong>.
+                Es un lenguaje utilizado para consultar, insertar,
+                modificar y eliminar información almacenada en bases
+                de datos relacionales.
+            </p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <div class="icono"></div>
+                    <h3>Bases de datos</h3>
+                    <p>
+                        Permite trabajar con grandes cantidades de
+                        información organizada.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono"></div>
+                    <h3>Consultas</h3>
+                    <p>
+                        Podemos buscar información específica dentro
+                        de una base de datos.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono"></div>
+                    <h3>Rapidez</h3>
+                    <p>
+                        SQL permite obtener y modificar información
+                        de manera eficiente.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+
+        <section class="seccion funcionamiento">
+
+            <p class="numero">02 — FUNCIONAMIENTO</p>
+
+            <h2>¿Cómo se usa SQL?</h2>
+
+            <p class="texto">
+                SQL trabaja mediante instrucciones llamadas consultas.
+                Estas consultas se envían a una base de datos para
+                realizar diferentes operaciones.
+            </p>
+
+            <div class="pasos">
+
+                <div class="paso">
+                    <strong>01</strong>
+                    <h3>Crear</h3>
+                    <p>Se crea una base de datos y sus tablas.</p>
+                </div>
+
+                <div class="flecha">→</div>
+
+                <div class="paso">
+                    <strong>02</strong>
+                    <h3>Guardar</h3>
+                    <p>Se agregan datos dentro de las tablas.</p>
+                </div>
+
+                <div class="flecha">→</div>
+
+                <div class="paso">
+                    <strong>03</strong>
+                    <h3>Consultar</h3>
+                    <p>Se buscan los datos que necesitamos.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMANDOS -->
+
+        <section id="comandos" class="seccion">
+
+            <p class="numero">03 — COMANDOS</p>
+
+            <h2>Principales comandos SQL</h2>
+
+            <div class="comandos">
+
+                <div class="comando">
+                    <span>SELECT</span>
+                    <p>Permite consultar información.</p>
+                </div>
+
+                <div class="comando">
+                    <span>INSERT</span>
+                    <p>Agrega nuevos registros.</p>
+                </div>
+
+                <div class="comando">
+                    <span>UPDATE</span>
+                    <p>Modifica información existente.</p>
+                </div>
+
+                <div class="comando">
+                    <span>DELETE</span>
+                    <p>Elimina registros.</p>
+                </div>
+
+                <div class="comando">
+                    <span>CREATE</span>
+                    <p>Crea tablas y bases de datos.</p>
+                </div>
+
+                <div class="comando">
+                    <span>WHERE</span>
+                    <p>Permite establecer condiciones.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EJEMPLOS -->
+
+        <section id="ejemplos" class="seccion ejemplos">
+
+            <p class="numero">04 — EJEMPLOS</p>
+
+            <h2>Ejemplos de código SQL</h2>
+
+
+            <!-- EJEMPLO 1 -->
+
+            <article class="ejemplo">
+
+                <div class="descripcion">
+
+                    <span class="tag">SELECT</span>
+
+                    <h3>Consultar datos</h3>
+
+                    <p>
+                        El comando SELECT se utiliza para obtener
+                        información de una tabla.
+                    </p>
+
+                </div>
+
+                <div class="codigo">
+
+<pre><code>SELECT *
+FROM alumnos;</code></pre>
+
+                </div>
+
+            </article>
+
+
+            <!-- EJEMPLO 2 -->
+
+            <article class="ejemplo">
+
+                <div class="descripcion">
+
+                    <span class="tag">INSERT</span>
+
+                    <h3>Agregar datos</h3>
+
+                    <p>
+                        INSERT permite agregar un nuevo registro
+                        a una tabla.
+                    </p>
+
+                </div>
+
+                <div class="codigo">
+
+<pre><code>INSERT INTO alumnos
+(nombre, edad)
+VALUES ('Juan', 18);</code></pre>
+
+                </div>
+
+            </article>
+
+
+            <!-- EJEMPLO 3 -->
+
+            <article class="ejemplo">
+
+                <div class="descripcion">
+
+                    <span class="tag">WHERE</span>
+
+                    <h3>Buscar con una condición</h3>
+
+                    <p>
+                        WHERE permite seleccionar solamente los
+                        registros que cumplen una condición.
+                    </p>
+
+                </div>
+
+                <div class="codigo">
+
+<pre><code>SELECT *
+FROM alumnos
+WHERE edad >= 18;</code></pre>
+
+                </div>
+
+            </article>
+
+
+            <!-- EJEMPLO 4 -->
+
+            <article class="ejemplo">
+
+                <div class="descripcion">
+
+                    <span class="tag">UPDATE</span>
+
+                    <h3>Modificar datos</h3>
+
+                    <p>
+                        UPDATE permite cambiar información
+                        que ya existe en una tabla.
+                    </p>
+
+                </div>
+
+                <div class="codigo">
+
+<pre><code>UPDATE alumnos
+SET edad = 19
+WHERE nombre = 'Juan';</code></pre>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- IMAGEN / CAPTURA -->
+
+        <section class="seccion captura">
+
+            <p class="numero">05 — PRÁCTICA</p>
+
+            <h2>SQL en acción</h2>
+
+            <p class="texto">
+                Una consulta SQL puede ejecutarse desde diferentes
+                programas de administración de bases de datos.
+            </p>
+
+            <div class="imagen-sql">
+
+                <div class="barra-editor">
+                    SQL Editor
+                </div>
+
+                <div class="editor">
+
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+
+                    <code>
+                        SELECT nombre, email<br>
+                        FROM usuarios<br>
+                        WHERE activo = 1;<br><br>
+                        -- Resultado: usuarios activos
+                    </code>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section class="final">
+
+            <h2>Ahora ya conoces lo básico de SQL.</h2>
+
+            <p>
+                Puedes comenzar creando tus propias tablas,
+                agregando información y realizando consultas.
+            </p>
+
+            <a href="#inicio" class="boton">Volver arriba ↑</a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="logo">SQL<span>Academy</span></div>
+
+        <p>
+            Página educativa sobre SQL
+        </p>
+
+        <p class="copyright">
+            © 2026 SQL Academy
+        </p>
+
+    </footer>
+
+</body>
+</html>
